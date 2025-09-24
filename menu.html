@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Menu - Brew & Beans</title>
+  <meta name='description' content='Explore our coffee menu, pastries, and light bites at Brew & Beans.'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap' rel='stylesheet'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'coffee-primary': '#3C2415',
+            'coffee-secondary': '#8B4513',
+            'coffee-accent': '#D2B48C',
+            'coffee-bg': '#F5DEB3'
+          },
+          fontFamily: {
+            'primary': ['Montserrat', 'ui-sans-serif', 'system-ui'],
+            'secondary': ['Open Sans', 'Segoe UI', 'Arial', 'Helvetica', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class='font-secondary antialiased'>
+  <header>
+    <nav class='bg-white shadow-md'>
+      <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div class='flex justify-between items-center h-16'>
+          <a href='index.html' class='text-2xl font-bold text-coffee-primary' aria-label='Brew & Beans'>Brew & Beans</a>
+          <div class='hidden md:flex space-x-6'>
+            <a href='index.html' class='text-gray-700 hover:text-coffee-primary'>Home</a>
+            <a href='menu.html' class='text-gray-700 hover:text-coffee-primary'>Menu</a>
+            <a href='about.html' class='text-gray-700 hover:text-coffee-primary'>About</a>
+            <a href='contact.html' class='text-gray-700 hover:text-coffee-primary'>Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class='bg-white text-gray-800'>
+    <section class='py-12'>
+      <div class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <h1 class='font-primary text-3xl md:text-4xl font-semibold mb-6'>Menu</h1>
+        <p class='mb-6 text-gray-700'>Explore our coffee drinks, pastries, and light bites. All items are prepared fresh daily.</p>
+        <!-- Coffee Section -->
+        <h2 class='font-primary text-2xl md:text-3xl mb-4'>Coffee</h2>
+        <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8'>
+          <div class='p-4 bg-white rounded-lg shadow-md'>
+            <div class='flex items-center justify-between'>
+              <strong>Espresso</strong>
+              <span class='text-gray-600'>$2.50</span>
+            </div>
+            <p class='text-sm text-gray-600'>Rich, balanced shot with a velvety finish.</p>
+          </div>
+          <div class='p-4 bg-white rounded-lg shadow-md'>
+            <div class='flex items-center justify-between'>
+              <strong>Latte</strong>
+              <span class='text-gray-600'>$3.75</span>
+            </div>
+            <p class='text-sm text-gray-600'>Creamy milk with a smooth espresso base.</p>
+          </div>
+          <div class='p-4 bg-white rounded-lg shadow-md'>
+            <div class='flex items-center justify-between'>
+              <strong>Cappuccino</strong>
+              <span class='text-gray-600'>$3.50</span>
+            </div>
+            <p class='text-sm text-gray-600'>Classic cappuccino with a thick foam crown.</p>
+          </div>
+        </div>
+        <!-- Pastries Section -->
+        <h2 class='font-primary text-2xl md:text-3xl mb-4'>Pastries</h2>
+        <div class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+          <div class='p-4 bg-white rounded-lg shadow-md'>
+            <div class='flex items-center justify-between'>
+              <strong>Croissant</strong>
+              <span class='text-gray-600'>$3.25</span>
+            </div>
+            <p class='text-sm text-gray-600'>Buttery layers with a delicate flake.</p>
+          </div>
+          <div class='p-4 bg-white rounded-lg shadow-md'>
+            <div class='flex items-center justify-between'>
+              <strong>Blueberry Muffin</strong>
+              <span class='text-gray-600'>$3.95</span>
+            </div>
+            <p class='text-sm text-gray-600'>Sweet blueberries baked to a tender crumb.</p>
+          </div>
+          <div class='p-4 bg-white rounded-lg shadow-md'>
+            <div class='flex items-center justify-between'>
+              <strong>Pain au Chocolat</strong>
+              <span class='text-gray-600'>$3.75</span>
+            </div>
+            <p class='text-sm text-gray-600'>Flaky pastry filled with rich dark chocolate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-coffee-primary text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12'>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-8'>
+        <div>
+          <h3 class='text-2xl font-bold text-coffee-accent'>Brew & Beans</h3>
+          <p class='text-gray-200 mt-2'>Quality coffee, community, and a space that feels like home.</p>
+        </div>
+        <div>
+          <h4 class='font-semibold'>Hours</h4>
+          <p class='text-sm text-gray-200'>Mon-Fri: 7:00 AM - 8:00 PM</p>
+          <p class='text-sm text-gray-200'>Sat-Sun: 8:00 AM - 6:00 PM</p>
+        </div>
+        <div>
+          <h4 class='font-semibold'>Location</h4>
+          <p class='text-sm text-gray-200'>123 Brew Lane, Coffee District</p>
+        </div>
+      </div>
+      <hr class='border-gray-600 my-6 opacity-50'>
+      <div class='text-center text-gray-300 text-sm'>© 2025 Brew & Beans. Locally roasted coffee, warm community.</div>
+    </div>
+  </footer>
+</body>
+</html>
